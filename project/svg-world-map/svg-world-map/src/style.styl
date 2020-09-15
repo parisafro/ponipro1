@@ -1,0 +1,108 @@
+@import "nib"
+
+html
+body
+  height 100vh
+  width 100vw
+  padding 0
+  margin 0
+section
+  width 100%
+  height 100%
+  background-image linear-gradient(-135deg,#203B4B 30%,#1F703D 70%)
+  text-align center
+  & .b-header
+    background-image linear-gradient(-135deg,#2ecc71 30%,#3498db 70%)
+    position relative
+    height 100%
+    width 100%
+    &__map
+      position absolute
+      margin auto
+      top 0
+      right 0
+      bottom 0
+      left 0
+      height 100%
+      width 100%
+      & circle
+        fill rgba(255, 255, 255, 0.15) !important
+        stroke none !important
+        &.active
+          stroke #fff !important
+          stroke-opacity .9
+          stroke-width 1px
+          fill #fff !important
+          fill-opacity .75
+          animation pulse 3s ease infinite
+        &.active-first
+          stroke #fff !important
+          stroke-opacity .9
+          fill #fff !important
+          fill-opacity .4
+          animation pulse-first 3s ease infinite
+        &.active-second
+          stroke #fff !important
+          stroke-opacity .9
+          fill #fff !important
+          fill-opacity .3
+          animation pulse-second 3s ease infinite
+        &.active-third
+          stroke #fff !important
+          stroke-opacity .9
+          fill #fff !important
+          fill-opacity .25
+          animation pulse-third 3s ease infinite
+@keyframes pulse
+  0%
+    opacity 0
+  25%
+    opacity .5
+  50%
+    opacity .9
+  75%
+    opacity .5
+  100%
+    opacity 0
+@keyframes pulse-first
+  0%
+    opacity 0
+    stroke-width 0px
+  25%
+    opacity .1
+  50%
+    stroke-width 12px
+    opacity .2
+  75%
+    opacity .1
+  100%
+    stroke-width 0px
+    opacity 0
+@keyframes pulse-second
+  0%
+    opacity 0
+    stroke-width 0px
+  25%
+    opacity .1
+  50%
+    stroke-width 16px
+    opacity .2
+  75%
+    opacity .1
+  100%
+    stroke-width 0px
+    opacity 0
+@keyframes pulse-third
+  0%
+    opacity 0
+    stroke-width 0px
+  25%
+    opacity .2
+  50%
+    stroke-width 20px
+    opacity .4
+  75%
+    opacity .2
+  100%
+    stroke-width 0px
+    opacity 0

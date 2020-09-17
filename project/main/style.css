@@ -3,6 +3,7 @@ body{
     padding:0;
     box-sizing: border-box;
     direction: rtl;
+    background-color: whitesmoke;
 }
 
 a{
@@ -80,7 +81,7 @@ button{
     display: block;
 }
 
-.textOverlay{
+#textOverlay{
     color: white;
     font-size: 35px;
     font-weight: 500px;
@@ -91,8 +92,9 @@ button{
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+    
 }
-.yellowtextOverlay{
+#yellowtextOverlay{
     color: white;
     font-size: 35px;
     font-weight: 500px;
@@ -105,7 +107,7 @@ button{
     text-align: center;
 }
 
-.redtextOverlay{
+#redtextOverlay{
     color: white;
     font-size: 35px;
     font-weight: 500px;
@@ -118,7 +120,7 @@ button{
     text-align: center;
 }
 
-.greentextOverlay{
+#greentextOverlay{
     color: white;
     font-size: 35px;
     font-weight: 500px;
@@ -131,7 +133,7 @@ button{
     text-align: center;
 }
 
-.purpletextOverlay{
+#purpletextOverlay{
     color: white;
     font-size: 35px;
     font-weight: 500px;
@@ -144,7 +146,7 @@ button{
     text-align: center;
 }
 
-.bluetextOverlay{
+#bluetextOverlay{
     color: white;
     font-size: 35px;
     font-weight: 500px;
@@ -191,7 +193,7 @@ button{
     height: 230px;
     width: 500px;
     border-radius: 50px 0px 50px 50px;
-    margin:-70px 30px 0px 0px;
+    margin:-80px 30px 0px 0px;
     background: rgb(49,102,244);
     position: relative;
     background: linear-gradient(135deg, rgba(49,102,244,0.8377100840336135) 23%, rgba(101,26,207,0.8601190476190477) 80%);
@@ -209,7 +211,7 @@ button{
     position:absolute;
     width: 50px;
     height: 50px;
-    padding: 150px 10px;
+    padding: 155px 10px;
 }
 
 .category{
@@ -223,7 +225,7 @@ button{
     font-size: 35px;
 }
 
-.timer{
+#timer{
     margin-top: 35px ;
     display: flex;
     justify-content: space-between;
@@ -235,7 +237,7 @@ button{
 
 }
 
-.bonus{
+#bonus{
     padding-top: 45px;
 }
 
@@ -290,7 +292,7 @@ button{
     background: rgb(97,139,251);
     background: linear-gradient(135deg, rgba(97,139,251,1) 23%, rgba(117,17,255,1) 80%);
     transform: rotateY(10px);
-    transition: all 0.4s ease;
+    transition: all 0.9s ease-out 0.2s;
 }
 
 .arzbtn li{
@@ -321,4 +323,132 @@ button{
     margin-top: -130px; 
     width: 1300px;
     border-top:3px solid #5332db;
+}
+
+.bottomPanels{
+    /* height: 400px;
+    width: 100%;
+    background-color: yellowgreen; */
+}
+
+.panelLeft{
+    display:grid;
+    grid-template-columns: 200px 200px ;
+    grid-template-rows: 100px 100px 100px;
+    float: left;
+    align-items: center;
+    margin-left: 150px;
+}
+
+.panelLeft button{
+    height: 50px;
+    width: 150px;
+    background: rgb(97,139,251);
+    background: linear-gradient(135deg, rgba(97,139,251,1) 23%, rgba(117,17,255,1) 80%);
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    margin: 45px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+i {
+    font-style: normal;
+    text-align: center;
+}
+
+.transaction{
+    display:flex;
+    justify-content: center;
+    grid-column: 1/3;
+}
+.transaction img{
+    height: 15px;
+    width: 15px;
+    float: left;
+    padding: 5px;
+}
+
+.transaction button{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.vl {
+    border-left: 3px solid #5332db;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 160%;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 400px;
+    margin-left: 150px;
+    border-collapse: collapse;
+    border-radius: 10px;
+    border-style: hidden;
+    box-shadow: 0 0 0 1px #666;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align:center;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  
+  .panelRight{
+    display: grid;
+    grid-template-rows: 100px 500px;
+    grid-template-columns: 200px 200px;
+    float: right;
+    align-items: center;
+    margin-right: 150px;
+  }
+
+  .btnRightAffiliate{
+    display:flex;
+    justify-content: center;
+    grid-column: 1/3;
+  }
+  .panelRight button{
+    height: 50px;
+    width: 150px;
+    background: rgb(97,139,251);
+    background: linear-gradient(135deg, rgba(97,139,251,1) 23%, rgba(117,17,255,1) 80%);
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .barPanel{
+      height:300px;
+      width: 400px;
+      margin-top: -120px;
+      border-radius: 20px;
+      background-color: #dddddd;
+  }
+
+  .link{
+      height: 20px;
+      width: 340px;
+      align-content: center;
+      align-self: center;
+      border-radius: 10px;
+      background-color: rgb(145, 145, 145);
+      margin:30px;
+      text-align: left;
+  }
+
+footer img{
+    width:100%;
+    height: 300px;
 }

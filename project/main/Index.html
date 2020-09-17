@@ -1263,17 +1263,17 @@
                         <img class="bigcircle" src="./images/purple1.png" alt="">
                     </div>
                     <div class="inlineSection ">
-                        <h1 class="textOverlay">1000</h1>
+                        <h1 id="textOverlay">1000</h1>
                         <img class="circles"src="./images/green.png" alt="">
-                            <h1 class="greentextOverlay">1000</h1>
+                            <h1 id="greentextOverlay">1000</h1>
                         <img class="circles" src="./images/purple.png" alt="">
-                            <h1 class="purpletextOverlay">1000</h1>
+                            <h1 id="purpletextOverlay">1000</h1>
                         <img class="circles" src="./images/yellow.png" alt="">
-                            <h1 class="yellowtextOverlay">1000</h1>
+                            <h1 id="yellowtextOverlay">1000</h1>
                         <img class="circles" src="./images/red.png" alt="">
-                            <h1 class="redtextOverlay">1000</h1>
+                            <h1 id="redtextOverlay">1000</h1>
                         <img class="circles" src="./images/blue.png" alt="">
-                            <h1 class="bluetextOverlay">5000</h1>
+                            <h1 id="bluetextOverlay">5000</h1>
                     </div>
                     <div class="container">
 
@@ -1291,8 +1291,8 @@
                 </div>
                 <div class="category">
                     <span class="Toman">Toman</span>
-                    <span class="timer">00:00:00<span class="Claim">Claim</span></span>
-                    <span class="bonus">Bonus 0/100</span>
+                    <span id="timer">00:00:00<span class="Claim">Claim</span></span>
+                    <span id="bonus">Bonus 0/100</span>
                 </div>
             </div>
 
@@ -1303,35 +1303,113 @@
                 </div>
                 <div class="category">
                     <span class="toman">Toman</span>
-                    <span class="timer">00:00:00<span class="Claim">Claim</span></span>
-                    <span class="bonus">Bonus 0/100</span>
+                    <span id="timer">00:00:00<span class="Claim">Claim</span></span>
+                    <span id="bonus">Bonus 0/100</span>
                 </div>
             </div>
         </div>
     </content>
+
+
+
     <div class="arzbtn">
         <button>
             <i class="fas fa-caret-down"></i>انتخاب ارز
         </button>
         <ul>
-            <li>
-                <a href="">لیر</a>
+            <li id="lir">
+                <a href="#">لیر</a>
             </li>
-            <li>
-                <a href="">کرون</a>
+            <li id="cron">
+                <a href="#">کرون</a>
             </li>
-            <li>
-                <a href="">دلار</a>
+            <li id="doller">
+                <a href="#">دلار</a>
             </li>
-            <li>
-                <a href="">...</a>
+            <li >
+                <a href="#">...</a>
             </li>
         </ul>
     </div>
-    <br>
     <hr class="purpelLine">
-    <div></div>
 
+    <div class="bottomPanels">
+        <div class="panelLeft">
+            <button>Claim</button>
+            <button>affiliate</button>
+            <button>78</button>
+            <button>56</button>
+            <div class="transaction">
+                <button>
+                    <i><img class="trasactionlogo" src="./images/transaction.png" alt="">transaction</i>
+                </button>
+            </div>
+            <table>
+                <tr>
+                  <th>Type</th>
+                  <th>Amount</th>
+                </tr>
+                <tr>
+                  <td id="type">Claim</td>
+                  <td id="Amount">0.000</td>
+                </tr>
+                <tr>
+                  <td id="type">Claim</td>
+                  <td id="Amount">0.000</td>
+                </tr>
+                <tr>
+                  <td id="type">Claim</td>
+                  <td id="Amount">0.000</td>
+                </tr>
+                <tr>
+                  <td id="type">Claim</td>
+                  <td id="Amount">0.000</td>
+                </tr>
+                <tr>
+                  <td id="type">Claim</td>
+                  <td id="Amount">0.000</td>
+                </tr>
+                <tr>
+                    <td id="type">Claim</td>
+                    <td id="Amount">0.000</td>
+                  </tr>
+              </table>
+        </div>
+        <div class="vl"></div>
+        <div class="panelRight">
+            <div class="btnRightAffiliate"><button>Affiliate</button></div>
+            <div class="barPanel">
+                <div class="link">
+                    <a href="https://zagrosmoney.com?refer=">https://zagrosmoney.com?refer=</a>
+                </div>
+                <!-- <content class="bar-graph bar-graph-vertical bar-graph-two">
+                    <div class="bar-one bar-container">
+                      <div class="bar" data-percentage="40%"></div>
+                      <span class="number">2</span>
+                    </div>
+                    <div class="bar-two bar-container">
+                      <div class="bar" data-percentage="55%"></div>
+                      <span class="number">4</span>
+                    </div>
+                    <div class="bar-three bar-container">
+                      <div class="bar" data-percentage="68%"></div>
+                      <span class="number">6</span>
+                    </div>
+                    <div class="bar-four bar-container">
+                      <div class="bar" data-percentage="82%"></div>
+                      <span class="number">8</span>
+                    </div>
+                </content> -->
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <img src="./images/footer.png" alt="">
+    </footer>
+
+
+    <!-- <br>
     <br>
     <br>
     <br>
@@ -1340,18 +1418,14 @@
     <br>
     <br>
     <br>
-    <br> 
     <br>
     <br>
     <br>
     <br>
     <br>
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br> 
+    <br> -->
+
 
       <script  src="./scriptworld.js"></script>
 </body>

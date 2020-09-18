@@ -159,8 +159,6 @@ button{
     text-align: center;
 }
 
-
-
 .bigcircle{
     height: 200px;
     width: 230px;
@@ -173,32 +171,28 @@ button{
     width:100%;
 }
 
-.hi{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.middlePanel{
+    height: 600px;
+    width: 100%;
+    /* background-color: yellow; */
 }
 
-.freeTomanL{
-    float: left;
-    height: 240px;
+.panels{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    vertical-align: middle;
+    margin: -50px 20px;
+}
+
+.panel{
+    height: 250px;
     width: 500px;
-    border-radius: 0px 50px 50px 50px;
-    margin:0px 0px 0px 30px;
+    border-radius: 20px 20px 20px 20px;
     background: rgb(101,26,207);
     background: linear-gradient(135deg, rgba(101,26,207,0.8601190476190477) 23%, rgba(49,102,244,0.8377100840336135) 80%);
 }
-
-.freeTomanR{
-    height: 230px;
-    width: 500px;
-    border-radius: 50px 0px 50px 50px;
-    margin:-80px 30px 0px 0px;
-    background: rgb(49,102,244);
-    position: relative;
-    background: linear-gradient(135deg, rgba(49,102,244,0.8377100840336135) 23%, rgba(101,26,207,0.8601190476190477) 80%);
-}
-
 .logos{
     display: flex;
     flex-direction: column;
@@ -244,22 +238,21 @@ button{
 .arzbtn{
     height: 180px;
     width: 200px;
-    position: relative;
     margin:0 auto;
-    bottom: 170px;
     border-radius: 20%;
+    padding-top: 50px;
 }
 
 .arzbtn button{
     height: 60px;
-    width: 200px;
+    width: 190px;
     align-content: center;
     align-items: center;
     text-align: center;
     background: rgb(49,102,244);
     background: linear-gradient(135deg, rgba(49,102,244,0.8377100840336135) 23%, rgba(101,26,207,0.8601190476190477) 80%);
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     cursor: pointer;
 }
 
@@ -276,9 +269,7 @@ button{
 }
 
 .arzbtn ul{
-    position: absolute;
     margin-top: 5px;
-    right: 5px;
     width: 150px;
     height: 150px;
     display: flex;
@@ -292,7 +283,7 @@ button{
     background: rgb(97,139,251);
     background: linear-gradient(135deg, rgba(97,139,251,1) 23%, rgba(117,17,255,1) 80%);
     transform: rotateY(10px);
-    transition: all 0.9s ease-out 0.2s;
+    transition: all 0.9s ease 0.2s;
 }
 
 .arzbtn li{
@@ -308,7 +299,6 @@ button{
 }
 
 .arzbtn li:hover{
-    height: 20%;
     border-radius: 5px;
     background: rgb(40,58,108);
     background: linear-gradient(135deg, rgba(40,58,108,1) 23%, rgba(40,6,87,1) 80%);
@@ -319,16 +309,16 @@ button{
     padding-left: 20px;
 }
 
-.purpelLine{
+.hl{
     margin-top: -130px; 
     width: 1300px;
     border-top:3px solid #5332db;
 }
 
 .bottomPanels{
-    /* height: 400px;
+    height: 600px;
     width: 100%;
-    background-color: yellowgreen; */
+    /* background-color: yellowgreen; */
 }
 
 .panelLeft{
@@ -351,6 +341,11 @@ button{
     margin: 45px;
     margin-bottom: 50px;
     cursor: pointer;
+}
+
+.panelLeft button:hover{
+    background: rgb(40,58,108);
+    background: linear-gradient(135deg, rgba(40,58,108,1) 23%, rgba(40,6,87,1) 80%);
 }
 
 i {
@@ -377,11 +372,11 @@ i {
 
 .vl {
     border-left: 3px solid #5332db;
-    height: 400px;
+    height: 500px;
     position: absolute;
     left: 50%;
     margin-left: -3px;
-    top: 160%;
+    top: 170%;
   }
 
   table {
@@ -437,6 +432,10 @@ i {
       background-color: #dddddd;
   }
 
+  #stacked{
+  min-height: 250px;
+}
+
   .link{
       height: 20px;
       width: 340px;
@@ -446,9 +445,17 @@ i {
       background-color: rgb(145, 145, 145);
       margin:30px;
       text-align: left;
-  }
+}
+
+footer{
+    width:100%;
+    height: 300px;
+    margin-top: -200px;
+    /* background-color: yellowgreen; */
+}
 
 footer img{
     width:100%;
-    height: 300px;
+    height: 80%;
+    margin-top: -100px;
 }

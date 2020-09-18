@@ -1,0 +1,198 @@
+body{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    direction: rtl;
+    background-color: whitesmoke;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+    font-size: 15px;
+    text-align: center;
+    align-items: center;
+    padding:5px;
+    align-self: center;
+
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+li{
+    padding:0px 10px;
+    align-items:baseline;
+    align-content: center;
+}
+
+button{
+    border-style: none;
+    border: 0px; 
+    background-color: #5332db;
+    border-radius: 50px;
+    height: 35px;
+    width: 100px;
+    border: none;
+    outline:none;
+}
+
+.logo{
+    width:250px;
+    height: 70px;
+    padding-left: 50px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.content{
+    width: 100%;
+    height: 1000px;
+}
+
+.mainGrid{
+    display: grid;
+    grid-template-rows: 1000px;
+    grid-template-columns: 700px;
+}
+
+.gridR{
+    display: grid;
+    grid-template-rows:repeat(6, 100px);
+    grid-template-columns: 200px 200px;
+    row-gap: 10px;
+    column-gap: 20px;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.label{
+    position:relative; 
+}
+
+.label input{
+    height: 40px;
+    width: 250px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-right: 220px;
+    font-size: 20px;
+    color: white;
+    background: rgb(105,27,213);
+    background: linear-gradient(135deg, rgba(105,27,213,1) 23%, rgba(208,12,210,1) 80%);
+}
+
+.labelM{
+    color:rgb(255, 255, 255); 
+    font-size:18px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:120px;
+    top:10px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+  }
+
+input:focus ~ label, input:valid ~ label{
+    top:-20px;
+    left:150px;
+    font-size:14px;
+    color:#5264AE;
+  }
+
+.gridR button{
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    color: white;
+    background: rgb(105,27,213);
+    background: linear-gradient(135deg, rgba(105,27,213,1) 23%, rgba(208,12,210,1) 80%);
+}
+.gridR .labelTwo {
+    height: 40px;
+    width: 250px;
+    border-radius: 50px;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 50px;
+    margin-right: 220px;
+    font-size: 20px;
+    color: white;
+    background: rgb(0, 0, 0);
+    background-color: rgb(184, 184, 184) !important;
+}
+
+.gridR .labell{
+    height: 40px;
+    width: 250px;
+    border-radius: 50px;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding-top: 20px;
+    margin-right: 220px;
+    font-size: 20px;
+    color: white;
+    background: rgb(39,118,207);
+    background: linear-gradient(111deg, rgba(39,118,207,1) 23%, rgba(146,4,161,1) 80%);
+}
+
+.gridR .grid3 {
+    display: grid;
+    grid-template-rows:50px;
+    grid-template-columns:repeat(3, 100px);
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-right: 200px;
+    margin-top: -20px;
+}
+
+.gridR .grid3 label{
+    height: 50px;
+    width: 80px;
+    justify-content:space-evenly;
+    align-content: center;
+    border-radius: 0px 0px 20px 20px;
+    margin: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    background: rgb(39,118,207);
+    background: linear-gradient(111deg, rgba(39,118,207,1) 23%, rgba(146,4,161,1) 80%);
+
+}
+
+footer{
+    width:100%;
+    height: 250px;
+}
+
+footer img{
+    width:100%;
+    height: 100%;
+}

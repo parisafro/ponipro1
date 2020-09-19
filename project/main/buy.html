@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./buy.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js'></script>
     <title>Document</title>
 </head>
 <body>
@@ -27,8 +28,8 @@
         </nav>       
     </header>
 
-    <section class="content">
-        <div class="mainGrid">
+    <section id="content" style="background-image: black;" class="content">
+        <div>
             <div class="gridR">
                 <div class="label">
                     <input type="text" required>
@@ -46,17 +47,32 @@
                     <label class="labell" for="دریافت خواهید کرد">دریافت خواهید کرد</label>
                 <br>
                 <div class="grid3">
-                        <label for=""></label>
-                        <label for=""></label>
-                        <label for=""></label>
+                        <label for=""><i>$1000</i></label>
+                        <label for=""><i>1000<img src="./images/T.png" alt=""></i></label>
+                        <label for=""><i>1000<img src="./images/p.png" alt=""></i></label>
                 </div>
+                <br>
+                <button class="continue">ادامه دهید</button>
             </div>
             <div class="gridL">
-            </div>  
+                <!-- <div class="imageSize"> -->
+                <img class="imageSize" src="./images/skrill.png" alt="">
+                <img class="imageSize" src="./images/Perfect_Money.png" alt="">
+                <img class="imageSize" src="./images/webmoney.png" alt="">
+                <img class="imageSize" src="./images/Payeer-logo.jpg" alt="">
+                <img class="imageSize" src="./images/advcash.png" alt="">
+                <img class="imageSize" src="./images/shaparak.jpg" alt="">
+                <img class="imageSize" src="./images/peypal.png" alt="">
+                <img class="imageSize" src="./images/bitcoin-logo.png" alt="">
+                <img class="imageSize" src="./images/trueusd.png" alt="">
+                <img class="imageSize" src="./images/vissa.png" alt="">
+            </div>
+
         </div>
     </section>
     <footer>
         <img src="./images/footer.png" alt="">
     </footer>
+    <script  src="./script.js"></script>
 </body>
 </html>

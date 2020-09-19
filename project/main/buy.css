@@ -30,6 +30,11 @@ li{
     align-content: center;
 }
 
+i {
+    font-style: normal;
+    text-align: center;
+}
+
 button{
     border-style: none;
     border: 0px; 
@@ -59,12 +64,6 @@ button{
     height: 1000px;
 }
 
-.mainGrid{
-    display: grid;
-    grid-template-rows: 1000px;
-    grid-template-columns: 700px;
-}
-
 .gridR{
     display: grid;
     grid-template-rows:repeat(6, 100px);
@@ -74,6 +73,31 @@ button{
     justify-items: center;
     justify-content: center;
     align-content: center;
+    margin: 50px;
+    margin-top: 100px;
+    margin-right: 200px;
+    float:right;
+}
+
+.gridL{
+    display: grid;
+    grid-template-rows:repeat(7, 100px);
+    grid-template-columns: 200px 200px;
+    row-gap: 10px;
+    column-gap: 20px;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 150px;
+    margin-left: 200px;
+    float: left;
+}
+
+.imageSize{
+    height: 90px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: white;
 }
 
 .label{
@@ -185,6 +209,37 @@ input:focus ~ label, input:valid ~ label{
     background: rgb(39,118,207);
     background: linear-gradient(111deg, rgba(39,118,207,1) 23%, rgba(146,4,161,1) 80%);
 
+}
+
+.gridR .grid3 i{
+    text-align: center;
+    align-content: center;
+}
+
+.gridR .grid3 img{
+    height: 15px; 
+    width: 15px; 
+    padding:10px; 
+    float: left;
+    align-content: center;
+    text-align: center;
+}
+
+.gridR .continue{
+    height: 40px;
+    width: 150px;
+    border-radius: 50px;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding-top: 5px;
+    margin-right: 220px;
+    margin-top: 50px;
+    font-size: 20px;
+    color: white;
+    background: rgb(89, 175, 4);
 }
 
 footer{

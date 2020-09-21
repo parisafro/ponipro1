@@ -1,6 +1,8 @@
 @font-face{
     font-family: 'bYekan';
-    src: url(fonts/1.eot), url(fonts/2.ttf), url(fonts/3.ttf);
+    src: url(fonts/1.eot), url(fonts/2.ttf), url(fonts/3.ttf),url(fonts/Yekan.svg);
+    font-weight: normal;
+    font-style: normal;
 }
 
 body{
@@ -9,7 +11,7 @@ body{
     box-sizing: border-box;
     direction: rtl;
     background-color: whitesmoke;
-    font-family: 'bYekan';
+    font-family: "bYekan";
 }
 
 a{
@@ -20,7 +22,7 @@ a{
     align-items: center;
     padding:5px;
     align-self: center;
-
+    font-family: "bYekan";
 }
 
 ul{
@@ -109,6 +111,7 @@ li{
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
     
 }
 #yellowtextOverlay{
@@ -122,6 +125,7 @@ li{
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #redtextOverlay{
@@ -135,6 +139,7 @@ li{
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #greentextOverlay{
@@ -148,6 +153,7 @@ li{
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #purpletextOverlay{
@@ -157,10 +163,13 @@ li{
     position: absolute;
     top: 80%;
     left:70%;
+    align-content: center;
+    align-items: center;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #bluetextOverlay{
@@ -174,6 +183,7 @@ li{
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .bigcircle{
@@ -189,9 +199,12 @@ li{
 }
 
 .middlePanel{
-    height: 600px;
+    height: 450px;
     width: 100%;
-    /* background-color: yellow; */
+    background: rgb(176,176,176);
+    background: linear-gradient(100deg, rgba(176,176,176,1) 20%, rgba(238,238,238,1) 50%,
+     rgba(186,185,185,1) 80%);
+    margin-bottom: 150px;
 }
 
 .panels{
@@ -234,12 +247,14 @@ li{
     direction: ltr;
     margin:25px ;
     font-size: 35px;
+    color: white;
 }
 
 #timer{
     margin-top: 20px ;
     display: flex;
     justify-content: space-between;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .Claim{
@@ -251,6 +266,7 @@ li{
 
 #bonus{
     padding-top: 25px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .arzbtn{
@@ -423,6 +439,7 @@ i {
     border: 1px solid #dddddd;
     text-align:center;
     padding: 8px;
+    font-family: 'Times New Roman', Times, serif;   
   }
   
   tr:nth-child(even) {
@@ -475,10 +492,6 @@ i {
       border-radius: 20px;
       background-color: #dddddd;
   }
-
-  /* #stacked{
-  min-height: 250px;
-} */
 
 .link{
     height: 20px;
